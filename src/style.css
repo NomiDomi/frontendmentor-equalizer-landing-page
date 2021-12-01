@@ -33,6 +33,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
+    color: var(--secondary-300);
 }
 
 body {
@@ -44,13 +45,35 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;    
-    padding: 40px;
+    padding: 60px;
 }
 
 /*********** Header ***************/
 header .logo {
     display: flex;
     align-items: flex-start;
+}
+
+/*********** Container 1 ***************/
+.intro-container {
+    width: 90vw;
+    max-width: 1110px;
+    margin-bottom: 320px;
+}
+
+.intro-container .title {
+    max-width: 1015px;
+    font-size: var(--h-1);
+    line-height: 88px;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+.intro-container .subtitle {
+    max-width: 825px;
+    font-size: var(--body-1);
+    line-height: 34px;
+    font-weight: var(--normal-weight);
 }
 
 /*********** Container 2 ***************/
