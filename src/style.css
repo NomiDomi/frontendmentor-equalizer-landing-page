@@ -42,34 +42,31 @@ main {
 }
 
 /*********** Footer ***************/
-footer {
-    outline: 2px solid red;
-    width: 75vw;
+.contact-container {
+    width: 90vw;
     max-width: 1110px;    
     display: flex;    
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
-.company-logo {
-    position: absolute;
+.company-container {
+    display: flex; 
+    align-items: flex-start;   
 }
 
-.contact-container {
+.company-container .text {
     font-weight: var(--normal-weight);
-    line-height: 26px;
     font-size: var(--body-2);
-    margin-right: 30%;
-    width: 366px;
+    line-height: 26px;
+    width: 420px;
+    margin-left: 10%;
 }
 
-.contact-container span {
+.company-container .text span {
     font-weight: var(--bold-weight);
 }
 
-.icon-container {
-    outline: 2px solid red;
-    display: flex;
-    align-items: center;
+.icon-container .facebook, .icon-container .instagram, .icon-container .twitter {
+    padding: 5px;
 }
