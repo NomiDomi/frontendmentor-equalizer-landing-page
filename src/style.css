@@ -1,11 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
-/* Color schema */
 :root {
+    /* Color schema */
     --primary-100: #FA7453;
 
     --secondary-100: #FCFAF9;
     --secondary-300: #191826;
     --secondary-500: #66E2DC;
     --secondary-700: #FFB964;
+
+    /* Typography */
+    /* Font-weights */
+    --bold-weight: 700;
+    --normal-weight: 400;
+    /* Font-size */
+    --h-1: 88px;
+    --h-2: 40px;
+    --body-1: 20px;
+    --body-2: 16px;
+
+    /* Widths */
+    --desktop-width: 1440px;
+    --tablet-width: 768px;
+    --mobile-width: 375px;
+}
+
+/*********** Resets ***************/
+*, 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*********** Footer ***************/
+footer {
+    outline: 2px solid red;
+    width: 75vw;
+    max-width: 1110px;    
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.company-logo {
+    position: absolute;
+}
+
+.contact-container {
+    font-weight: var(--normal-weight);
+    line-height: 26px;
+    font-size: var(--body-2);
+    margin-right: 30%;
+    width: 366px;
+}
+
+.contact-container span {
+    font-weight: var(--bold-weight);
+}
+
+.icon-container {
+    outline: 2px solid red;
+    display: flex;
+    align-items: center;
 }
