@@ -35,14 +35,128 @@ body {
     -moz-osx-font-smoothing: grayscale; 
 }
 
+body {
+    background-image: url("./assets/bg-main-desktop.png");
+    background-size: cover;
+}
+
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;    
+    padding: 40px;
+}
+
+/*********** Header ***************/
+header .logo {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*********** Container 2 ***************/
+.design-container {
+    width: 90vw;
+    max-width: 1110px;
+    height: 600px;
+    background-color: var(--secondary-300);
+    border-radius: 12px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.pattern-img {
+    position: absolute;
+    left: 336px;
+    bottom: 172px;
+}
+
+.app-img {
+    position: absolute;
+    left: 102px;
+    bottom: 171px;
+    width: 312px;
+}
+
+.download-container {
+    position: absolute;
+    top: 90px;
+    right: 95px;
+    width: 446px;
+    background-color: var(--primary-100);
+    border-radius: 12px;
+    padding: 57px;
+    color: var(--secondary-100);
+}
+
+.download-container .title {
+    font-size: var(--h-2);
+    line-height: 52px;
+    margin-bottom: 22px;
+    font-weight: var(--bold-weight);
+}
+
+.download-container .subtitle {
+    font-size: var(--body-1);
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: var(--normal-weight);
+}
+
+.download-container .price {
+    font-size: 65px;
+    line-height: 52px;
+    font-weight: var(--bold-weight);
+    display: flex;
     align-items: center;
 }
 
+.download-container .price span {
+    font-size: var(--body-1);
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    font-weight: var(--normal-weight);
+    margin: 16px;
+}
+
+.download-container .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download-container .buttons button {
+    height: 61px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: var(--bold-weight);
+    letter-spacing: -0.18px;
+}
+
+.download-container .buttons .ios {
+    margin: 16px 0 16px 0;
+    background-color: var(--secondary-300);
+    color: var(--secondary-100);
+}
+
+.download-container .buttons .ios::before {
+    content: url(./assets/icon-apple.svg);
+    padding-right: 5px;
+}
+
+.download-container .buttons .android {
+    background-color: var(--secondary-100);
+    color: var(--secondary-300);
+}
+
+.download-container .buttons .android::before {
+    content: url(./assets/icon-android.svg);
+    padding-right: 5px;
+}
+
 /*********** Footer ***************/
-.contact-container {
+.contact-container {    
     width: 90vw;
     max-width: 1110px;    
     display: flex;    
