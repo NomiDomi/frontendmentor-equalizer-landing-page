@@ -122,14 +122,14 @@ header .pattern-img {
     background-color: var(--primary-100);
     border-radius: 12px;
     padding: 57px;
-    color: var(--secondary-100);
 }
 
 .download-container .title {
     font-size: var(--h-2);
     line-height: 52px;
     margin-bottom: 22px;
-    font-weight: var(--bold-weight);
+    font-weight: var(--bold-weight);    
+    color: var(--secondary-100);
 }
 
 .download-container .subtitle {
@@ -137,9 +137,11 @@ header .pattern-img {
     line-height: 34px;
     margin-bottom: 40px;
     font-weight: var(--normal-weight);
+    color: var(--secondary-100);
 }
 
 .download-container .price {
+    color: var(--secondary-100);
     font-size: 65px;
     line-height: 52px;
     font-weight: var(--bold-weight);
@@ -148,6 +150,7 @@ header .pattern-img {
 }
 
 .download-container .price span {
+    color: var(--secondary-100);
     font-size: var(--body-1);
     line-height: 32px;
     letter-spacing: -0.2px;
