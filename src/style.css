@@ -287,4 +287,24 @@ header .pattern-img {
         bottom: 182px;
         width: 270px;
     }
+
+    .download-container {
+        top: 150px;
+        left: 239px;
+        width: 400px;
+        padding: 48px;
+    }
+
+    .download-container .title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .download-container .subtitle {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    
 }
