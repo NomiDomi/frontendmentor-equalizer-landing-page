@@ -246,8 +246,7 @@ header .pattern-img {
     body {
         background-image: url("./assets/bg-main-tablet.png");
     }
-
-    /*********** Header ***************/
+    
     header .pattern-img {
         position: absolute;
         top: -120px;
