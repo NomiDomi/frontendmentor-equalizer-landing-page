@@ -39,6 +39,7 @@ body {
 body {
     background-image: url("./assets/bg-main-desktop.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -50,18 +51,21 @@ main {
 
 /*********** Header ***************/
 header {
+    width: 90vw;
+    max-width: 1110px;
     position: relative;
 }
 
 header .logo {
-    border: 2px solid red;
     display: flex;
     align-items: flex-start;
+    margin-bottom: 100px;
 }
 
 header .pattern-img {
     position: absolute;
     top: -120px;
+    left: 950px;
 }
 
 /*********** Container 1 ***************/
