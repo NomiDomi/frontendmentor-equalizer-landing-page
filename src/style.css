@@ -246,10 +246,42 @@ header .pattern-img {
     body {
         background-image: url("./assets/bg-main-tablet.png");
     }
-    
+
+    /*********** Header ***************/
     header .pattern-img {
         position: absolute;
         top: -120px;
         left: 480px;
+    }
+
+    /*********** Container 1 ***************/
+    .intro-container {
+        margin-bottom: 250px;
+    }
+
+    .intro-container .title {
+        max-width: 520px;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.73px;
+    }
+
+    .intro-container .subtitle {
+        max-width: 514px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /*********** Container 2 ***************/
+    .pattern-img {
+        left: 229px;
+        bottom: 211px;        
+        width: 280px;
+    }
+    
+    .app-img {
+        left: 64px;
+        bottom: 182px;
+        width: 270px;
     }
 }
