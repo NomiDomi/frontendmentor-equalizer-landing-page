@@ -240,3 +240,17 @@ header .pattern-img {
     cursor: pointer;
     filter: invert(52%) sepia(73%) saturate(523%) hue-rotate(322deg) brightness(98%) contrast(101%);
 }
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url("./assets/bg-main-tablet.png");
+    }
+
+    /*********** Header ***************/
+    header .pattern-img {
+        position: absolute;
+        top: -120px;
+        left: 480px;
+    }
+}
