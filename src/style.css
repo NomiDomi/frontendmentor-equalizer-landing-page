@@ -3,17 +3,22 @@
 :root {
     --ff: 'IBM Plex Sans', sans-serif;
 
-    --fs-m: 1.6rem;
-    --fs-l: 4rem;
+    --fs-xs: 1.6rem;
+    --fs-s: 1.8rem;
+    --fs-m: 2rem;
+    --fs-l: 3.2rem;
+    --fs-xl: 4rem;
+    --fs-xxl: 6.5rem;
 
     --fw-r: 400;
     --fw-b: 700;
 
-    --p: 2.4rem;
+    --p-s: 2.4rem;
+    --p-l: 3.8rem;
 
-    --mb-s: 1.6rem;
-    --mb-r: 2rem;
-    --mb-l: 6.4rem;
+    --m-s: 1.6rem;
+    --m-r: 2rem;
+    --m-l: 6.4rem;
 
     --br: 1.2rem;
 
@@ -46,41 +51,43 @@ body {
 }
 
 header {
-    margin-bottom: var(--mb-s);
+    margin-bottom: var(--m-s);
 }
 
 header, section, footer {
-    padding: var(--p);
+    padding: var(--p-s);
 }
 
 /*********** Container 1 ***************/
 h1 {
-    font-size: var(--fs-l);
-    line-height: calc(var(--fs-l) + .8rem);
+    font-size: var(--fs-xl);
+    line-height: calc(var(--fs-xl) + .8rem);
     font-weight: var(--fw-b);
     letter-spacing: -.045rem;
-    margin-bottom: var(--mb-r);
+    margin-bottom: var(--m-r);
 }
 
 p {
-    font-size: var(--fs-m);
-    line-height: calc(var(--fs-m) + 1rem);
+    font-size: var(--fs-xs);
+    line-height: calc(var(--fs-xs) + 1rem);
     font-weight: var(--fw-r);
 }
 
 /*********** Container 2 ***************/
 .design-container {
-    width: 100vw;
     height: 60rem;
     background-color: var(--neutral-clr-dark);
-    border-radius: var(--br);
     margin-top: 35%;
-
     position: relative;
 }
 
-.design-container img {
+.design-container img, .download-container{
     position: absolute;
+}
+
+.design-container, .download-container {
+    width: 100vw;    
+    border-radius: var(--br);
 }
 
 .img-back {
@@ -93,4 +100,42 @@ p {
     width: 55%;
     right: calc(50vw - 55%/2);
     top: -15%;
+}
+
+.download-container {
+    height: 55rem;
+    background-color: var(--primary-clr);
+    padding: var(--p-l);
+
+    left: 0;
+    top: 60%;
+}
+
+.title, .subtitle, .price, .price span{
+    color: var(--neutral-clr-light);
+}
+
+.title {
+    font-size: var(--fs-l);
+    line-height: calc(var(--fs-l) + .8rem);
+    font-weight: var(--fw-b);
+    margin: 1.2rem 0px 1.2rem 0px;
+}
+
+.subtitle {
+    font-size: var(--fs-s);
+    line-height: calc(var(--fs-s) + 1rem);
+}
+
+.price {
+    font-size: var(--fs-xxl);
+    font-weight: var(--fw-b);
+    display: flex;
+    align-items: center;
+}
+
+.price span {
+    font-size: var(--fs-m);
+    font-weight: var(--fw-r);    
+    margin-left: var(--m-s);
 }
