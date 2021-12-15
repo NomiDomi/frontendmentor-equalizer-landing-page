@@ -74,5 +74,23 @@ p {
     height: 60rem;
     background-color: var(--neutral-clr-dark);
     border-radius: var(--br);
-    margin-top: 40%;
+    margin-top: 35%;
+
+    position: relative;
+}
+
+.design-container img {
+    position: absolute;
+}
+
+.img-back {
+    width: 75%;
+    top: 0;
+    left: calc(50vw - 75%/2);
+}
+
+.img-front {
+    width: 55%;
+    right: calc(50vw - 55%/2);
+    top: -15%;
 }
