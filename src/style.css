@@ -11,8 +11,11 @@
 
     --p: 2.4rem;
 
+    --mb-s: 1.6rem;
     --mb-r: 2rem;
     --mb-l: 6.4rem;
+
+    --br: 1.2rem;
 
     --primary-clr: #FA7453;
     --primary-clr-light: #FFB964;
@@ -35,18 +38,22 @@ body {
 body {
     width: 100vw;
     min-height: 100vh;
-    padding: var(--p);
 
     background-image: url("./assets/bg-main-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top -200px right -160px;
+    background-position: top -490px right -500px;
 }
 
 header {
-    margin-bottom: var(--mb-l);
+    margin-bottom: var(--mb-s);
 }
 
+header, section, footer {
+    padding: var(--p);
+}
+
+/*********** Container 1 ***************/
 h1 {
     font-size: var(--fs-l);
     line-height: calc(var(--fs-l) + .8rem);
@@ -59,4 +66,13 @@ p {
     font-size: var(--fs-m);
     line-height: calc(var(--fs-m) + 1rem);
     font-weight: var(--fw-r);
+}
+
+/*********** Container 2 ***************/
+.design-container {
+    width: 100vw;
+    height: 60rem;
+    background-color: var(--neutral-clr-dark);
+    border-radius: var(--br);
+    margin-top: 40%;
 }
