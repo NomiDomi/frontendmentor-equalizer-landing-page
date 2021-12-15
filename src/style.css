@@ -3,6 +3,17 @@
 :root {
     --ff: 'IBM Plex Sans', sans-serif;
 
+    --fs-m: 1.6rem;
+    --fs-l: 4rem;
+
+    --fw-r: 400;
+    --fw-b: 700;
+
+    --p: 2.4rem;
+
+    --mb-r: 2rem;
+    --mb-l: 6.4rem;
+
     --primary-clr: #FA7453;
     --primary-clr-light: #FFB964;
     --secondary-clr:  #66E2DC;
@@ -17,8 +28,35 @@ body {
     font-family: var(--ff);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
+    color: var(--neutral-clr-dark);
+    font-size: 10px;
 }
 
 body {
-    font-size: 10px;
+    width: 100vw;
+    min-height: 100vh;
+    padding: var(--p);
+
+    background-image: url("./assets/bg-main-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top -200px right -180px;
+}
+
+header {
+    margin-bottom: var(--mb-l);
+}
+
+h1 {
+    font-size: var(--fs-l);
+    line-height: calc(var(--fs-l) + .8rem);
+    font-weight: var(--fw-b);
+    letter-spacing: -.045rem;
+    margin-bottom: var(--mb-r);
+}
+
+p {
+    font-size: var(--fs-m);
+    line-height: calc(var(--fs-m) + 1rem);
+    font-weight: var(--fw-r);
 }
